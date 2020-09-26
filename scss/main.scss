@@ -1,18 +1,28 @@
 $primary-color: #709fb0;
 $color-secondary: #1d2d50;
 $icon-color: #1e5f74;
-$show-hone-image: true;
-$home-image: url()
+$show-home-image: true;
+$home-image: url(../img/background-1.jpg);
+$background-opacity:0.9;
 
 @mixin easeOut {
     transition: all 0.6s ease-out;
 }
 
-*{
+@mixin background {
+    @if show-home-image {
+        &i#bg-img {
+            background: $home-image;
+        }
+    }
+}
+
+* {
     box-sizing: border-box;
 }
 
 body {
+    @include background;
     background: $primary-color;
     color: #ffffff;
     height: 100%;
