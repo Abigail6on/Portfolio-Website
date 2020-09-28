@@ -70,6 +70,56 @@
             transform: translate3d(0, 0, 0);
 
         }
+    }
 
+    &-branding {
+        background: darken($primary-color, 5);
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+        .portrait {
+            width: 250px;
+            height: 250px;
+            background: url('../img/portrait.jpg');
+            border-radius: 50%;
+            border: solid 3px $portrait-color;
+        }
+    }
+
+    .nav-item {
+        transform: translate3d(600px, 0, 0); 
+        @include easeOut;
+
+        &.show {
+            transform:translate3d(0, 0, 0);
+        }
+
+        &.current > a {
+            color: $color-secondary;
+        }
+    }
+
+    .nav-link{
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+        color: #fff;
+        @include easeOut;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+@for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
     }
 }
