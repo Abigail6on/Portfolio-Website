@@ -50,6 +50,7 @@ header {
 main {
     padding: 5rem;
     height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons{
         margin-top: 1rem;
@@ -68,7 +69,55 @@ main {
             margin-top: 20vh;
         }
     }
+}
 
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    // make up a three fractional(fr) grid 
+    grid-template-areas: 
+        "portrait-img bio-text bio-text"
+        "pro1 pro2 pro3"; 
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-img {
+        grid-area: portrait-img;
+        margin: auto;
+        border-radius: 50%;
+        border: $portrait-color 3px solid;
+    }
+    
+    .bio {
+        grid-area: bio-text;
+        font-size: 1.5rem;
+    }
+    
+    .pro-1 {
+        grid-area: pro1;
+    }
+    
+    .pro-2 {
+        grid-area: pro2;
+    }
+    
+    .pro-3 {
+        grid-area: pro3;
+    }
+    
+    .project {
+        background: lighten($primary-color, 5);
+        margin: auto;
+        padding: 0.5rem;
+        border: #70adb5 solid 3px;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 8);
+    color: $color-secondary;
+    height: 60px;
 }
 
 @import 'mobile';

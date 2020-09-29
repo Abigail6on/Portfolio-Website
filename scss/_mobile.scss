@@ -43,6 +43,17 @@
       }
     }
 
+    .about-info {
+      grid-template-areas:
+      "portrait-img" 
+      "bio-text"
+      "bio-text"
+      "pro1"
+      "pro2" 
+      "pro3"; 
+
+      grid-template-columns: 1fr;
+    }
 }
 
 

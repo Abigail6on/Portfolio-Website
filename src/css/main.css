@@ -137,7 +137,8 @@ header {
 
 main {
   padding: 5rem;
-  height: 100%; }
+  height: 100%;
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -149,6 +150,38 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "portrait-img bio-text bio-text" "pro1 pro2 pro3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-img {
+    grid-area: portrait-img;
+    margin: auto;
+    border-radius: 50%;
+    border: #0d7377 3px solid; }
+  .about-info .bio {
+    grid-area: bio-text;
+    font-size: 1.5rem; }
+  .about-info .pro-1 {
+    grid-area: pro1; }
+  .about-info .pro-2 {
+    grid-area: pro2; }
+  .about-info .pro-3 {
+    grid-area: pro3; }
+  .about-info .project {
+    background: #80aab9;
+    margin: auto;
+    padding: 0.5rem;
+    border: #70adb5 solid 3px; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #588c9f;
+  color: #1d2d50;
+  height: 60px; }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -179,4 +212,7 @@ main {
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "portrait-img"  "bio-text" "bio-text" "pro1" "pro2"  "pro3";
+    grid-template-columns: 1fr; } }
