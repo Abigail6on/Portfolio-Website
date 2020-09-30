@@ -108,8 +108,50 @@ main {
         background: lighten($primary-color, 5);
         margin: auto;
         padding: 0.5rem;
-        border: #70adb5 solid 3px;
+        border: $border-color solid 3px;
     }
+}
+
+.projects {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    img {
+        width: 100%;
+        border: $border-color solid 3px;
+
+        &:hover {
+            opacity: 0.4;
+            border-color: $color-secondary;
+            @include easeOut;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    
+    &:hover {
+        background: $color-secondary;
+        color: #fff;
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    background-color: darken($primary-color, 50);
+    color: #fff;
+}
+
+.btn-dark {
+    @extend .btn;
+    background-color: lighten($primary-color, 50);
+    color: #333;
 }
 
 #main-footer {
