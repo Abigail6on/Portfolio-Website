@@ -135,6 +135,9 @@ header {
 .text-secondary {
   color: #1d2d50; }
 
+.text-head {
+  color: #22223b; }
+
 main {
   padding: 5rem;
   height: 100%;
