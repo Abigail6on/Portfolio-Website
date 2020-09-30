@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Something about myself!",
   "main": "index.js",
-  "homepage":"https://EllenYang.github.io/portfolio_web",
+  "homepage":"https://EllenYang.github.io/Portfolio_Web",
   "scripts": {
     "sass": "node-sass -w scss/ -o src/css/ --recursive",
     "deploy":"gh-pages -d src"
