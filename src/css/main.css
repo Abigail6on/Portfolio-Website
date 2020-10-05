@@ -182,7 +182,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
     border: #70adb5 solid 3px; }
@@ -235,10 +235,15 @@ main {
   height: 60px; }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
-  .projects {
-    grid-template-columns: 1fr; } }
+  main {
+    padding: 1rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
+    main .projects {
+      grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   main {
