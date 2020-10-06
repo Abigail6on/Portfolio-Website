@@ -213,17 +213,17 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 01rem; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 0.5rem 2rem;
     margin-bottom: 0.3rem;
     transition: all 0.6s ease-out; }
     .boxes div:hover {
       background: #1e5f74;
       color: #fff;
-      padding: 0.5rem 1rem; }
+      padding: 0.5rem 0.5rem; }
       .boxes div:hover span {
         color: #1d2d50; }
 
