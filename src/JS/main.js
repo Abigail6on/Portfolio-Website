@@ -27,3 +27,20 @@ function toggle_menu() {
         show_menu = false;
     }
 }
+
+// add selectors slide effect 
+var acc = document.getElementsByClassName("travel-sector");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sector = this.nextElementSibling;
+    if (sector.style.display === "block") {
+      sector.style.display = "none";
+    } else {
+        sector.style.display = "block";
+    } 
+  });
+}
+
