@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Something about myself!",
   "main": "index.js",
-  "homepage":"https://abigail6on.github.io/Portfolio-Website/",
+  "homepage": "https://abigail6on.github.io/Portfolio-Website/",
   "scripts": {
     "sass": "node-sass -w scss/ -o src/css/ --recursive",
-    "deploy":"gh-pages -d src"
+    "deploy": "gh-pages -d src"
   },
   "author": "Ellen Yang",
   "license": "MIT",
