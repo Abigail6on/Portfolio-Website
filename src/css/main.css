@@ -299,6 +299,12 @@ main {
     clear: both;
     display: table; }
 
+.blog .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
