@@ -4,12 +4,14 @@
     #home h1 {
       margin-top: 10vh;
     }
-
     .lg-heading {
       margin-top:1rem;
       font-size: 5rem;
     }
     .projects {
+      grid-template-columns: 1fr;
+    }
+    .pic-row {
       grid-template-columns: 1fr;
     }
   }
@@ -26,6 +28,9 @@
       .lg-heading {
         line-height: 1;
         margin-bottom: 1rem;
+      }
+      .pic-row {
+        grid-template-columns: 1fr;
       }
     }
   
@@ -72,6 +77,8 @@
     .projects {
       grid-template-columns: repeat(2, 1fr);
     }
+
+  
 }
 
 

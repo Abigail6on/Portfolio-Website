@@ -321,6 +321,8 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
     main .projects {
+      grid-template-columns: 1fr; }
+    main .pic-row {
       grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
@@ -330,6 +332,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .pic-row {
+      grid-template-columns: 1fr; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
